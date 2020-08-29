@@ -1,0 +1,8 @@
+<h1>Django Image Uploading</h1>
+<ul>
+  {% for work1 in object_list %}
+    <h2>{{ work1.tot_title }}</h2>
+    <img src="{{ work1.tot_image.url}}" alt="{{ work1.tot_title }}">
+  {% endfor %}
+</ul>
+<a class="nav-link" href="login">sign out</a>

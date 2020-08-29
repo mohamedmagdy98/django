@@ -1,0 +1,59 @@
+DOCTYPE html>
+
+{%load static %}
+
+
+<html>
+<<style media="screen">
+.t{
+color:black;
+ width:100%;
+
+ }
+
+
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+	<title>interno</title>
+</head>
+<body background="rgb(255,255,255)" style="display:block;" alt="missed">
+
+<header>
+   Fixed navbar
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="testdb">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">sign out</a>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </nav>
+</header>
+
+   <div class="t" >
+     <ul>
+    {% for image in {{}} %}
+
+      <h2>{{ work1.tot_title }}</h2>
+
+      <img src="{{ work1.tot_image.url}}" alt="{{ work1.tot_title }}" style="margin-left:auto; margin-right: auto;  width: 50%; display:block; text-align: center; " >
+	  <p>_______________________________________________________________________________________________________________________<p>
+		{% endfor %}
+
+     </ul>
+
+  </div>
+ </body>
+</html>
