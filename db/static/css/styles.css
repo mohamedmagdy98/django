@@ -4600,8 +4600,8 @@ input[type=button].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #fed136;
-  background-color: #fff;
+  color: #fff;
+  background-color: #fed136;
   border: 1px solid #dee2e6;
 }
 .page-link:hover {
@@ -4629,7 +4629,7 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #fed136;
+  background-color: #000000;
   border-color: #fed136;
 }
 .page-item.disabled .page-link {
@@ -10070,7 +10070,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: transparent;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
